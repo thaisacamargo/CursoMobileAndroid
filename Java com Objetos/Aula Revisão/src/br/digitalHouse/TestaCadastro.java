@@ -1,5 +1,8 @@
 package br.digitalHouse;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestaCadastro {
 
     public static void main(String[] args) {
@@ -21,6 +24,9 @@ public class TestaCadastro {
         novoCadastro.cadastrarPessoa(novoFuncionario);
         novoCadastro.cadastrarPessoa(novoGerente);
         novoCadastro.imprimeCadastro();
+
+        List<Imposto> impostos = new ArrayList<>();
+        impostos.add(novoFuncionario);
     }
 
 

@@ -1,6 +1,6 @@
 package br.digitalHouse;
 
-public class Funcionario extends Pessoa {
+public class Funcionario extends Pessoa implements Imposto{
     private float salario;
 
     public Funcionario(String novoNome, Data novoNascimento, float novoSalario) {
@@ -12,12 +12,9 @@ public class Funcionario extends Pessoa {
         super(novoNome, novoNascimento);
     }
 
-    public float calculaImposto(){
-        float imposto = (float) (salario * 0.03);
-        System.out.println("Salario teste: "+this.salario);
-        System.out.println("O valor do imposto é: "+ imposto);
-        return imposto;
-    }
+   // public float calculaImposto(){
+
+    //}
 
     @Override
     public void imprimeDados() {
@@ -31,5 +28,13 @@ public class Funcionario extends Pessoa {
 
     public void setSalario(float novoSalario) {
         salario = novoSalario;
+    }
+
+    @Override
+    public float calculaImposto() {
+        float imposto = (float) (salario * 0.03);
+        System.out.println("Salario teste: "+this.salario);
+        System.out.println("O valor do imposto é: "+ imposto);
+        return imposto;
     }
 }

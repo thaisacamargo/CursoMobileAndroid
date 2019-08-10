@@ -1,6 +1,6 @@
 package br.digitalHouse;
 
-public class Gerente extends  Funcionario{
+public class Gerente extends  Funcionario implements Imposto{
     private String area;
 
     public Gerente(String novoNome, Data novoNascimento, float NovoSalario, String novaArea) {
