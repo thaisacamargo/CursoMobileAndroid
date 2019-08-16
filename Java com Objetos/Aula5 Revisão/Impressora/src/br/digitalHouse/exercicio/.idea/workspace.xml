@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7940ca5e-bb91-464c-80d6-d7d7b1961b18" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Aula Revisão.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/Impressora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Arquivo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Contrato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Documento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Foto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Impressora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Imprimivel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/out/production/Impressora/br/digitalHouse/exercicio/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Arquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Contrato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Documento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Foto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Impressora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Imprimivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/Impressora/src/br/digitalHouse/exercicio/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/CadastroPessoas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Imposto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/Pessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/out/production/Aula Revisão/br/digitalHouse/TestaCadastro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/CadastroPessoas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Gerente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Imposto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Aula Revisão/src/br/digitalHouse/TestaCadastro.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="1PTz4jpspHOorSStKXyAy1nfKsg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7940ca5e-bb91-464c-80d6-d7d7b1961b18" name="Default Changelist" comment="" />
+      <created>1565912684471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565912684471</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
