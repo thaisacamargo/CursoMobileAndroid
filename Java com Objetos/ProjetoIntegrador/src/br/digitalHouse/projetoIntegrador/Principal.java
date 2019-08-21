@@ -57,26 +57,25 @@ public class Principal {
 
                     System.out.println("Digite o codigoISBN do livro: ");
                     String codigoISBNIn = codigoISBN.next();
-                    
+
                     System.out.println("Digite a quantidade em estoque para este livro: ");
                     int qntddIn = qtddEstoque.nextInt();
 
                     Livro novoLivro = new Livro(codigoIn,precoIn,tituloIn,autorIn,lancIn,codigoISBNIn,qntddIn);
 
                     sistema.cadastrarLivro(novoLivro);
-
-                    sistema.menu();
                 }
+                sistema.menu();
             }
 
             if (opcaoMenu ==2){
-                System.out.println("Digite o código do produto:");
+                System.out.println("Digite o código do produto em que deseja consultar:");
                 String codigoIn = codigo.next();
                 sistema.consultaLivro(codigoIn);
                 sistema.menu();
             }
             if(opcaoMenu == 3){
-                System.out.println("Digite o código do produto vendido:");
+                System.out.println("Digite o código do produto que deseja realizar a venda:");
                 String codigoIn = codigo.next();
                 sistema.vender(codigoIn);
                 sistema.menu();

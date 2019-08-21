@@ -38,6 +38,7 @@ public class SistemaLivraria {
 
     public void cadastrarLivro(Produto novoLivro){
         listaLivros.put(novoLivro.getCodigo(),novoLivro);
+        System.out.println("Livro cadastrado com sucesso!!!!!!");
     }
 
     public void consultaLivro(String codigo){
