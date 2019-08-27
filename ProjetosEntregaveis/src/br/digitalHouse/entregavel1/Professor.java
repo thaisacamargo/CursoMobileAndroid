@@ -56,4 +56,13 @@ public abstract class Professor {
         return Objects.equals(codP, professor.codP);
     }
 
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", tempoCasa=" + tempoCasa +
+                ", codP=" + codP +
+                '}';
+    }
 }

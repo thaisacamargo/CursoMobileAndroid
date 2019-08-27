@@ -17,4 +17,11 @@ public class ProfessorAdjunto extends Professor {
     public void setQtddHoras(Integer qtddHoras) {
         this.qtddHoras = qtddHoras;
     }
+
+   // @Override
+   // public String toString() {
+   //     return "ProfessorAdjunto{" +
+   //             "qtddHoras=" + qtddHoras +
+   //             '}';
+   // }
 }

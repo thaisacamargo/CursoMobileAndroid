@@ -1,8 +1,6 @@
 package br.digitalHouse.entregavel1;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Curso {
     private String nome;
@@ -10,7 +8,7 @@ public class Curso {
     private ProfessorTitular profTitular;
     private ProfessorAdjunto profAdjunto;
     private Integer qtddAlunos;
-    private List<Aluno> listaAlunosMatriculados = new ArrayList<>();
+    private Map<Integer,Aluno> listaAlunosMatriculados = new HashMap<>();
 
 
     public Curso(String nome, Integer codC, Integer qtddAlunos) {
@@ -19,15 +17,23 @@ public class Curso {
         this.qtddAlunos = qtddAlunos;
     }
 
-    public Boolean adicionarUmAluno(Aluno umAluno){
+    public Boolean adicionarUmAluno(Integer codigA, Aluno umAluno){
         if (this.qtddAlunos >0){
+            qtddAlunos = qtddAlunos -1;
+            listaAlunosMatriculados.put(codigA, umAluno);
             return true;
         }else {
             return false;
         }
     }
 
-    public void excluirAluno(Aluno umAluno){
+    public void excluirAluno(Integer codigA, Aluno umAluno){
+        if (listaAlunosMatriculados.containsKey(codigA)){
+            listaAlunosMatriculados.remove(codigA);
+            System.out.println("\n**EXCLUIR ALUNO:**\n O aluno de código "+codigA + " foi removido da lista de alunos matriculados no curso");
+        }else {
+            System.out.println("\n**EXCLUIR ALUNO:**\nNão existe aluno com o código "+codigA+ " matriculado neste cuso!");
+        }
 
     }
 
@@ -72,11 +78,11 @@ public class Curso {
     }
 
     public List<Aluno> getListaAlunosMatriculados() {
-        return listaAlunosMatriculados;
+        return (List<Aluno>) listaAlunosMatriculados;
     }
 
     public void setListaAlunosMatriculados(List<Aluno> listaAlunosMatriculados) {
-        this.listaAlunosMatriculados = listaAlunosMatriculados;
+        this.listaAlunosMatriculados = (Map<Integer, Aluno>) listaAlunosMatriculados;
     }
 
     public boolean equals(Object o) {
@@ -84,5 +90,17 @@ public class Curso {
         if (o == null || getClass() != o.getClass()) return false;
         Curso curso = (Curso) o;
         return Objects.equals(codC, curso.codC);
+    }
+
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "nome='" + nome + '\'' +
+                ", codC=" + codC +
+                ", profTitular=" + profTitular +
+                ", profAdjunto=" + profAdjunto +
+                ", qtddAlunos=" + qtddAlunos +
+                ", listaAlunosMatriculados=" + listaAlunosMatriculados +
+                '}';
     }
 }
