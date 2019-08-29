@@ -10,6 +10,7 @@ public class ProfessorAdjunto extends Professor {
         this.qtddHoras = qtddHoras;
     }
 
+    //Gets e Seters
     public Integer getQtddHoras() {
         return qtddHoras;
     }
@@ -18,10 +19,4 @@ public class ProfessorAdjunto extends Professor {
         this.qtddHoras = qtddHoras;
     }
 
-   // @Override
-   // public String toString() {
-   //     return "ProfessorAdjunto{" +
-   //             "qtddHoras=" + qtddHoras +
-   //             '}';
-   // }
 }

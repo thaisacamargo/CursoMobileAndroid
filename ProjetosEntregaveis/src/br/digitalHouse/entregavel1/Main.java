@@ -44,13 +44,12 @@ public class Main {
         sistema.alocarProfessores(20001,1,3);
         sistema.alocarProfessores(20002,2,4);
 
+        sistema.matricularAluno(aluno5.getCodA(),curso2.getCodC());
         sistema.matricularAluno(aluno3.getCodA(),curso1.getCodC());
         sistema.matricularAluno(aluno2.getCodA(),curso1.getCodC());
-        sistema.matricularAluno(aluno1.getCodA(),curso1.getCodC());
+       // sistema.matricularAluno(aluno1.getCodA(),curso1.getCodC());
 
         sistema.matricularAluno(aluno3.getCodA(),curso2.getCodC());
-        sistema.matricularAluno(aluno5.getCodA(),curso2.getCodC());
-
 
         sistema.consultarCurso(aluno3.getCodA());
     }

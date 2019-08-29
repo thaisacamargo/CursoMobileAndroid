@@ -51,6 +51,12 @@ public class Aluno {
         this.codA = codA;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", codA=" + codA +
+                '}';
+    }
 }

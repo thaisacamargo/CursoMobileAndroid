@@ -1,6 +1,7 @@
 package br.digitalHouse.entregavel1;
 
 import java.util.*;
+import java.util.jar.JarOutputStream;
 
 public class Curso {
     private String nome;
@@ -11,28 +12,33 @@ public class Curso {
     private Map<Integer,Aluno> listaAlunosMatriculados = new HashMap<>();
 
 
+    //Construtor
     public Curso(String nome, Integer codC, Integer qtddAlunos) {
         this.nome = nome;
         this.codC = codC;
         this.qtddAlunos = qtddAlunos;
     }
 
-    public Boolean adicionarUmAluno(Integer codigA, Aluno umAluno){
+    //Métodos necessários
+    public Boolean adicionarUmAluno(Aluno umAluno){
         if (this.qtddAlunos >0){
             qtddAlunos = qtddAlunos -1;
-            listaAlunosMatriculados.put(codigA, umAluno);
+            List<Aluno> lista = new ArrayList<>();
+            lista.add(0,umAluno);
+            this.setListaAlunosMatriculados(lista);
             return true;
         }else {
             return false;
         }
     }
 
-    public void excluirAluno(Integer codigA, Aluno umAluno){
-        if (listaAlunosMatriculados.containsKey(codigA)){
-            listaAlunosMatriculados.remove(codigA);
-            System.out.println("\n**EXCLUIR ALUNO:**\n O aluno de código "+codigA + " foi removido da lista de alunos matriculados no curso");
+    public void excluirAluno(Aluno umAluno){
+        Integer codigoA = umAluno.getCodA();
+        if (listaAlunosMatriculados.containsKey(codigoA)){
+            listaAlunosMatriculados.remove(codigoA);
+            System.out.println("\n**EXCLUIR ALUNO:**\n O aluno de código "+codigoA + " foi removido da lista de alunos matriculados no curso");
         }else {
-            System.out.println("\n**EXCLUIR ALUNO:**\nNão existe aluno com o código "+codigA+ " matriculado neste cuso!");
+            System.out.println("\n**EXCLUIR ALUNO:**\nNão existe aluno com o código "+codigoA+ " matriculado neste cuso!");
         }
 
     }
@@ -77,12 +83,13 @@ public class Curso {
         this.qtddAlunos = qtddAlunos;
     }
 
-    public List<Aluno> getListaAlunosMatriculados() {
-        return (List<Aluno>) listaAlunosMatriculados;
+    public Map<Integer, Aluno> getListaAlunosMatriculados() {
+        return listaAlunosMatriculados;
     }
 
     public void setListaAlunosMatriculados(List<Aluno> listaAlunosMatriculados) {
-        this.listaAlunosMatriculados = (Map<Integer, Aluno>) listaAlunosMatriculados;
+        Aluno aluno = listaAlunosMatriculados.get(0);
+        this.listaAlunosMatriculados.put(aluno.getCodA(),aluno);
     }
 
     public boolean equals(Object o) {

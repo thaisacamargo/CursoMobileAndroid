@@ -7,12 +7,14 @@ public class Matricula {
     private Curso curso;
     private Date dataMatricula;
 
+//Contrutor
     public Matricula(Aluno aluno, Curso curso) {
         this.aluno = aluno;
         this.curso = curso;
         this.dataMatricula = new Date();
     }
 
+    //GETS E SETTERS
     public Aluno getAluno() {
         return aluno;
     }

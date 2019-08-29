@@ -9,7 +9,6 @@ public class DigitalHouseManager {
     private Map <Integer, Professor> listaProfessores = new HashMap<>();
     private Map <Integer, Curso> listaCursos = new HashMap<>();
     private List<Matricula> listaMatricula = new ArrayList<>();
-    private Map<String,Integer> alunoMatricula = new HashMap<>();
 
 
     public void registrarCurso(String nome, Integer codigoC, Integer qtddAlunos){
@@ -19,7 +18,6 @@ public class DigitalHouseManager {
             Curso novoCurso = new Curso(nome,codigoC,qtddAlunos);
             listaCursos.put(codigoC,novoCurso);
             System.out.println("\n REGISTRAR CURSO: \nO curso de código " + codigoC + " foi cadastrado com sucesso!");
-            //System.out.println("Lista de cursos: \n"+ listaCursos.toString());
         }
 
     }
@@ -81,10 +79,13 @@ public class DigitalHouseManager {
             Curso curso = listaCursos.get(codigoC);
             //System.out.println("CURSO: "+ curso);
 
-            if(curso.adicionarUmAluno(codigoA,aluno)){
+            if(curso.adicionarUmAluno(aluno)){
 
                 Matricula matricula = new Matricula(aluno,curso);
                 listaMatricula.add(matricula);
+                List<Aluno> lista = new ArrayList<>();
+                lista.add(0,aluno);
+                //curso.setListaAlunosMatriculados(lista);
                 System.out.println("\nA matricula foi realizada com sucesso!");
 
             }else {
